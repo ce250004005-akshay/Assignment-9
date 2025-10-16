@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+struct Point{
+    float x;
+    float y;
+};
+
+int main(){
+    Point points[7] = {
+    };
+    for(int i=0;i<7;i++){
+        float a,b;
+        cout<<"Enter the values of x and y for"<< i+1 <<"th iteration";
+        cin >>a;
+        cin>>b;
+        points[i].x = a;
+        points[i].y = b;
+    }
+    cout<<"The number of points in the first quadrant are";
+    for(int i =0;i<7;i++){
+        if (points[i].x>0 && points[i].y>0){
+            cout<< "("<<points[i].x<<","<<points[i].y<<")";
+        }
+    } 
+}
